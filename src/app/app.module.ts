@@ -9,6 +9,7 @@ import { RecipeItemComponent } from './body/recipes/recipe-list/recipe-item/reci
 import { RecipeDetailComponent } from './body/recipes/recipe-detail/recipe-detail.component';
 import { ShoppingEditComponent } from './body/shopping-list/shopping-edit/shopping-edit.component';
 import { ShoppingListComponent } from './body/shopping-list/shopping-list.component';
+import { ShoppingListService } from './body/shopping-list/shopping-list.service';
 import { RecipesComponent } from './body/recipes/recipes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 
@@ -29,7 +30,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
